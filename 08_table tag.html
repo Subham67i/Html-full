@@ -1,0 +1,237 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html table</title>
+    <style>
+        h2{
+            background-color: blue;
+            color: rgb(245, 243, 245);
+            box-shadow: 0 5px 10px black ;
+            font-style: oblique;
+            text-align: center;
+        }
+        body{
+            margin-bottom: 500px;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        table{
+            text-align: center;
+        }
+        #orange{
+            background-color: orangered;
+        }
+        #red,#red th,#red td {
+            border: 2px solid red;
+            border-collapse: collapse;
+            padding: 10px;
+            box-shadow: 0 0 5px rgb(12, 11, 11);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        #red thead{
+            background-color: red;
+            color: aliceblue;
+        }
+        #red tbody{
+            background-color: rgb(224, 77, 77);
+
+        }
+        #red{
+            width: 100%;
+            text-align: center;
+        
+        }
+       
+        
+
+    </style>
+    <h2>simple table</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>sno</th>
+                <th>name</th>
+                <th>company</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>john</td>
+                <td>tnfosys</td>
+                <td>bangalore</td>
+            </tr>
+             <tr>
+                <td>2</td>
+                <td>ram</td>
+                <td>hcl</td>
+                <td>lucknow</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ram</td>
+                <td>wipro</td>
+                <td>delhi</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>rahul</td>
+                <td>tnfosys</td>
+                <td>bihar</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>table with col span</h2>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>son</th>
+                <th>name</th>
+                <th colspan="2">company & add</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>john</td>
+                <td>infosys</td>
+                <td>bangalore</td>
+            </tr>
+        </tbody<tbody>
+            <tr>
+                <td>2</td>
+                <td>john</td>
+                <td>infosys</td>
+                <td>bangalore</td>
+            </tr>
+        </tbody<tbody>
+            <tr>
+                <td>3</td>
+                <td>john</td>
+                <td>infosys</td>
+                <td>bangalore</td>
+            </tr>
+        </tbody>
+    </table>
+        <h2>
+            table with row span
+        </h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>son</th>
+                    <th>name</th>
+                    <th>company</th>
+                    <th>address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">1</td>
+                    <td>john</td>
+                    <td>tnfosys</td>
+                    <td>bangalore</td>
+                </tr>
+                <tr>
+                    <td>rahul</td>
+                    <td>wipro</td>
+                    <td>noida</td>
+                </tr> 
+                <tr>
+                    <td>suraj</td>
+                    <td>wipro</td>
+                    <td>channi</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>custom table 1</h2>
+          <table id="red">
+        
+            <thead>
+                <tr>
+                    <th>sno</th>
+                    <th>name</th>
+                    <th>company</th>
+                    <th>address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>john</td>
+                    <td>tnfosys</td>
+                    <td>bangalore</td>
+                </tr>
+                 <tr>
+                    <td>2</td>
+                    <td>ram</td>
+                    <td>hcl</td>
+                    <td>lucknow</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>ram</td>
+                    <td>wipro</td>
+                    <td>delhi</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>rahul</td>
+                    <td>tnfosys</td>
+                    <td>bihar</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>custom table 2 </h2>
+        <table id="orange">
+      
+          <thead>
+              <tr>
+                  <th>sno</th>
+                  <th>name</th>
+                  <th>company</th>
+                  <th>address</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>john</td>
+                  <td>tnfosys</td>
+                  <td>bangalore</td>
+              </tr>
+               <tr>
+                  <td>2</td>
+                  <td>ram</td>
+                  <td>hcl</td>
+                  <td>lucknow</td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>ram</td>
+                  <td>wipro</td>
+                  <td>delhi</td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>rahul</td>
+                  <td>tnfosys</td>
+                  <td>bihar</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+
+
+</body>
+</html>
